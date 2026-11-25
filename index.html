@@ -3,51 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rekap Belajar HTML - Modul 1–15</title>
+    <title>Profil Diri - Indradi Rahmatullah</title>
 </head>
 <body>
 
-    <!-- Judul Utama -->
-    <h1>Catatan & Praktik HTML Dasar (Modul 1–15)</h1>
+    <!-- Bagian Header & Navigasi -->
+    <header>
+        <h1>Indradi Rahmatullah</h1>
+        <p><strong>Software &amp; AI Developer Enthusiast</strong> | S.Kom.</p>
+        <nav>
+            <ul>
+                <li><a href="#tentang">Tentang Aku</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#kontak">Kontak &amp; Pesan</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Paragraf -->
-    <p>
-        Halaman ini dibuat sebagai dokumentasi penyelesaian materi fundamental HTML, 
-        mulai dari struktur dokumen dasar hingga penyematan media dan tautan navigasi.
-    </p>
+    <hr>
 
-    <!-- Gambar -->
-    <img 
-        src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=600&q=80" 
-        alt="Ilustrasi kode pemrograman HTML di layar monitor" 
-        width="500"
-    >
+    <!-- Bagian Utama -->
+    <main>
 
-    <!-- Unordered List -->
-    <h2>Materi yang Sudah Dipelajari</h2>
-    <ul>
-        <li>Struktur dasar dokumen HTML (<code>&lt;!DOCTYPE html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>)</li>
-        <li>Hierarki heading (<code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code>) dan teks paragraf (<code>&lt;p&gt;</code>)</li>
-        <li>Pembuatan daftar terurut (<code>&lt;ol&gt;</code>) dan tidak terurut (<code>&lt;ul&gt;</code>)</li>
-        <li>Penambahan tautan eksternal menggunakan tag <code>&lt;a&gt;</code></li>
-        <li>Penyematan gambar beserta atribut <code>src</code>, <code>alt</code>, dan ukuran</li>
-    </ul>
+        <!-- Section 1: Tentang Aku -->
+        <section id="tentang">
+            <h2>Tentang Aku</h2>
+            <img 
+                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&q=80" 
+                alt="Ilustrasi ruang kerja pemrograman" 
+                width="300"
+            >
+            <p>
+                Halo! Saya Indradi, lulusan Sarjana Komputer (S.Kom.) yang fokus mendalami 
+                pengembangan perangkat lunak, web development, dan eksperimen kecerdasan buatan (AI) lokal. 
+                Saat ini saya sedang memantapkan fondasi rekayasa web dimulai dari HTML murni.
+            </p>
+        </section>
 
-    <!-- Ordered List -->
-    <h2>Langkah Selanjutnya</h2>
-    <ol>
-        <li>Melakukan commit dan push file <code>index.html</code> ke repositori GitHub</li>
-        <li>Memperbarui status progres belajar di halaman Notion</li>
-        <li>Lanjut mempelajari HTML Semantik, Tabel, dan Formulir</li>
-    </ol>
+        <hr>
 
-    <!-- Link -->
-    <p>
-        Referensi dokumentasi lengkap dapat dibaca di 
-        <a href="https://developer.mozilla.org/id/docs/Web/HTML" target="_blank" rel="noopener noreferrer">
-            MDN Web Docs - HTML
-        </a>.
-    </p>
+        <!-- Section 2: Skill -->
+        <section id="skill">
+            <h2>Skill &amp; Keahlian</h2>
+            
+            <h3>Pengembangan Web &amp; Pemrograman</h3>
+            <ul>
+                <li>HTML5 Dasar &amp; Semantik</li>
+                <li>Python (Otomatisasi &amp; Pengembangan Aplikasi Lokal)</li>
+                <li>JavaScript Dasar &amp; Logika Algoritma</li>
+                <li>Version Control menggunakan Git &amp; GitHub</li>
+            </ul>
+
+            <h3>Data &amp; Perangkat Lunak</h3>
+            <ol>
+                <li>Analisis Data &amp; Ekonometrika</li>
+                <li>Pemetaan Geografis Dasar (QGIS)</li>
+                <li>Visual Studio Code &amp; Manajemen Proyek Notion</li>
+            </ol>
+        </section>
+
+        <hr>
+
+        <!-- Section 3: Kontak & Form Input -->
+        <section id="kontak">
+            <h2>Kontak</h2>
+            <p>Terhubung dengan saya melalui tautan berikut atau kirimkan pesan langsung lewat formulir di bawah:</p>
+            <ul>
+                <li>GitHub: <a href="https://github.com/" target="_blank" rel="noopener noreferrer">github.com/indradi</a></li>
+                <li>Email: <a href="mailto:indradi@example.com">indradi@example.com</a></li>
+            </ul>
+
+            <h3>Kirim Pesan Langsung</h3>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulir Kontak</legend>
+
+                    <!-- Input Text -->
+                    <p>
+                        <label for="nama">Nama Lengkap:</label><br>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
+                    </p>
+
+                    <!-- Input Email -->
+                    <p>
+                        <label for="email">Alamat Email:</label><br>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </p>
+
+                    <!-- Input Select (Dropdown) -->
+                    <p>
+                        <label for="topik">Topik Pesan:</label><br>
+                        <select id="topik" name="topik" required>
+                            <option value="">-- Pilih Topik --</option>
+                            <option value="kolaborasi">Kolaborasi Proyek</option>
+                            <option value="lowongan">Tawaran Pekerjaan / Rekrutmen</option>
+                            <option value="diskusi">Diskusi Teknis &amp; Belajar</option>
+                            <option value="lainnya">Lainnya</option>
+                        </select>
+                    </p>
+
+                    <!-- Input Radio -->
+                    <p>
+                        Prioritas Balasan:<br>
+                        <input type="radio" id="normal" name="prioritas" value="normal" checked>
+                        <label for="normal">Normal</label>
+                        <input type="radio" id="mendesak" name="prioritas" value="mendesak">
+                        <label for="mendesak">Mendesak</label>
+                    </p>
+
+                    <!-- Input Textarea -->
+                    <p>
+                        <label for="pesan">Isi Pesan:</label><br>
+                        <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tuliskan pesan Anda secara detail di sini..." required></textarea>
+                    </p>
+
+                    <!-- Input Checkbox -->
+                    <p>
+                        <input type="checkbox" id="konfirmasi" name="konfirmasi" required>
+                        <label for="konfirmasi">Saya memastikan data yang diisi sudah benar.</label>
+                    </p>
+
+                    <!-- Tombol Submit & Reset -->
+                    <p>
+                        <button type="submit">Kirim Pesan</button>
+                        <button type="reset">Reset Form</button>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Bagian Footer -->
+    <footer>
+        <p>&copy; 2026 Indradi Rahmatullah. Dibuat dengan HTML polos sebagai proyek akhir F07.</p>
+    </footer>
 
 </body>
 </html>
