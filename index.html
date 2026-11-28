@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profil Diri - Indradi Rahmatullah</title>
+    <!-- Menghubungkan CSS Eksternal -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Bagian Header & Navigasi -->
     <header>
         <h1>Indradi Rahmatullah</h1>
         <p><strong>Software &amp; AI Developer Enthusiast</strong> | S.Kom.</p>
@@ -20,12 +21,7 @@
         </nav>
     </header>
 
-    <hr>
-
-    <!-- Bagian Utama -->
     <main>
-
-        <!-- Section 1: Tentang Aku -->
         <section id="tentang">
             <h2>Tentang Aku</h2>
             <img 
@@ -36,21 +32,18 @@
             <p>
                 Halo! Saya Indradi, lulusan Sarjana Komputer (S.Kom.) yang fokus mendalami 
                 pengembangan perangkat lunak, web development, dan eksperimen kecerdasan buatan (AI) lokal. 
-                Saat ini saya sedang memantapkan fondasi rekayasa web dimulai dari HTML murni.
+                Saat ini saya sedang memantapkan fondasi rekayasa web dimulai dari HTML dan CSS.
             </p>
         </section>
 
-        <hr>
-
-        <!-- Section 2: Skill -->
         <section id="skill">
             <h2>Skill &amp; Keahlian</h2>
             
             <h3>Pengembangan Web &amp; Pemrograman</h3>
             <ul>
                 <li>HTML5 Dasar &amp; Semantik</li>
+                <li>CSS3 Dasar (Variables, Box Model, Tipografi)</li>
                 <li>Python (Otomatisasi &amp; Pengembangan Aplikasi Lokal)</li>
-                <li>JavaScript Dasar &amp; Logika Algoritma</li>
                 <li>Version Control menggunakan Git &amp; GitHub</li>
             </ul>
 
@@ -62,9 +55,6 @@
             </ol>
         </section>
 
-        <hr>
-
-        <!-- Section 3: Kontak & Form Input -->
         <section id="kontak">
             <h2>Kontak</h2>
             <p>Terhubung dengan saya melalui tautan berikut atau kirimkan pesan langsung lewat formulir di bawah:</p>
@@ -78,19 +68,16 @@
                 <fieldset>
                     <legend>Formulir Kontak</legend>
 
-                    <!-- Input Text -->
                     <p>
                         <label for="nama">Nama Lengkap:</label><br>
                         <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required>
                     </p>
 
-                    <!-- Input Email -->
                     <p>
                         <label for="email">Alamat Email:</label><br>
                         <input type="email" id="email" name="email" placeholder="nama@email.com" required>
                     </p>
 
-                    <!-- Input Select (Dropdown) -->
                     <p>
                         <label for="topik">Topik Pesan:</label><br>
                         <select id="topik" name="topik" required>
@@ -102,7 +89,6 @@
                         </select>
                     </p>
 
-                    <!-- Input Radio -->
                     <p>
                         Prioritas Balasan:<br>
                         <input type="radio" id="normal" name="prioritas" value="normal" checked>
@@ -111,19 +97,16 @@
                         <label for="mendesak">Mendesak</label>
                     </p>
 
-                    <!-- Input Textarea -->
                     <p>
                         <label for="pesan">Isi Pesan:</label><br>
-                        <textarea id="pesan" name="pesan" rows="5" cols="40" placeholder="Tuliskan pesan Anda secara detail di sini..." required></textarea>
+                        <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesan Anda secara detail di sini..." required></textarea>
                     </p>
 
-                    <!-- Input Checkbox -->
                     <p>
                         <input type="checkbox" id="konfirmasi" name="konfirmasi" required>
                         <label for="konfirmasi">Saya memastikan data yang diisi sudah benar.</label>
                     </p>
 
-                    <!-- Tombol Submit & Reset -->
                     <p>
                         <button type="submit">Kirim Pesan</button>
                         <button type="reset">Reset Form</button>
@@ -131,14 +114,10 @@
                 </fieldset>
             </form>
         </section>
-
     </main>
 
-    <hr>
-
-    <!-- Bagian Footer -->
     <footer>
-        <p>&copy; 2026 Indradi Rahmatullah. Dibuat dengan HTML polos sebagai proyek akhir F07.</p>
+        <p>&copy; 2026 Indradi Rahmatullah. Dibuat dengan HTML &amp; CSS (Modul 1–20).</p>
     </footer>
 
 </body>
