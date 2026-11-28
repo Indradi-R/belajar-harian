@@ -1,0 +1,218 @@
+/* =========================================
+   1. CSS VARIABLES (Palet Dark Mode Elegan)
+   ========================================= */
+:root {
+    --warna-utama: #090d16;        /* Hitam kebiruan pekat untuk header */
+    --warna-aksen: #38bdf8;        /* Biru langit cerah (cyan) agar kontras */
+    --warna-aksen-hover: #0284c7;  /* Biru lebih dalam saat hover */
+    --warna-latar: #0f172a;        /* Slate sangat gelap untuk latar halaman */
+    --warna-kartu: #1e293b;        /* Slate gelap untuk kotak konten (section) */
+    --warna-teks: #e2e8f0;         /* Putih lembut agar mata tidak cepat lelah */
+    --warna-teks-redup: #94a3b8;   /* Abu-abu terang untuk subjudul & footer */
+    --warna-garis: #334155;        /* Garis pembatas subtle di latar gelap */
+    --warna-input: #0f172a;        /* Latar khusus kolom input form */
+}
+
+/* =========================================
+   2. RESET & PENGATURAN FONT GLOBAL
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+    line-height: 1.6;
+}
+
+/* =========================================
+   3. HEADER & NAVIGASI
+   ========================================= */
+header {
+    background-color: var(--warna-utama);
+    color: var(--warna-kartu);
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+}
+
+header p {
+    color: var(--warna-garis);
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav a {
+    color: var(--warna-kartu);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: var(--warna-aksen);
+}
+
+/* =========================================
+   4. KONTEN UTAMA & BOX MODEL (JARAK)
+   ========================================= */
+main {
+    max-width: 780px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: var(--warna-kartu);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--warna-garis);
+}
+
+h2 {
+    color: var(--warna-utama);
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--warna-aksen);
+}
+
+h3 {
+    color: var(--warna-utama);
+    font-size: 1.15rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+/* Pengaturan Gambar Profil */
+#tentang img {
+    display: block;
+    margin-bottom: 18px;
+    border-radius: 8px;
+    border: 3px solid var(--warna-latar);
+}
+
+/* Pengaturan List Skill & Kontak */
+section ul, section ol {
+    margin-left: 24px;
+    margin-bottom: 16px;
+}
+
+section li {
+    margin-bottom: 6px;
+}
+
+section a {
+    color: var(--warna-aksen);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   5. STYLING FORMULIR KONTAK
+   ========================================= */
+fieldset {
+    border: 1px solid var(--warna-garis);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 12px;
+}
+
+legend {
+    font-weight: bold;
+    color: var(--warna-utama);
+    padding: 0 8px;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: 1px solid var(--warna-garis);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--warna-teks);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--warna-aksen);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: var(--warna-aksen);
+    color: var(--warna-kartu);
+}
+
+button[type="submit"]:hover {
+    background-color: var(--warna-aksen-hover);
+}
+
+button[type="reset"] {
+    background-color: var(--warna-latar);
+    color: var(--warna-teks);
+    border: 1px solid var(--warna-garis);
+}
+
+/* =========================================
+   6. FOOTER
+   ========================================= */
+footer {
+    text-align: center;
+    padding: 24px 20px;
+    color: var(--warna-teks-redup);
+    font-size: 0.9rem;
+}
